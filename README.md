@@ -57,7 +57,10 @@ edit launchsettings.json
 launch da profile.
 ```
 
-![](D:\Work\cases\6992\cli\instruction.png)
+![InstructionImage](https://github.com/MadhukarMoogala/ForgeDA-AzureStorage/blob/master/instruction.png)
+
+### Demo
+[![asciicast](https://asciinema.org/a/349153.svg)](https://asciinema.org/a/349153)
 
 ### License
 
