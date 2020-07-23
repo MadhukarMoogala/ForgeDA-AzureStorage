@@ -1,0 +1,102 @@
+[07/23/2020 11:50:55] Job information:
+"CommandLine":[
+  "$(engine.path)\\InventorCoreConsole.exe /i $(args[inputFile].path) /al $(appbundles[UpdateIPTParams].path) $(args[inputJson].path)"
+]
+"Settings":{
+  "script": {
+    "value": ""
+  },
+  "dasreportfaileduploadoptional": {
+    "value": "true",
+    "isEnvironmentVariable": true
+  }
+}
+"Id":"aaf241c5517b4b41b6640ba019993197"
+"ActivityId":"dasdev.ActivityIptParam+prod"
+"Engine.Id":"Autodesk.Inventor!13"
+"Apps": [
+"App.Id":"dasdev.UpdateIPTParams!1"
+]
+"BoundArguments":{
+  "inputFile": {
+    "localName": "$(inputFile)",
+    "url": "https://forge6668.blob.core.windows.net/Masked:W/J52tPySVseRzjbenMgsMo4SqM="
+  },
+  "inputJson": {
+    "localName": "params.json",
+    "url": "data:application/json, {'Width':'40.0','Height':'80.0'}"
+  },
+  "outputFile": {
+    "localName": "outputFile.ipt",
+    "url": "https://forge6668.blob.core.windows.net/Masked:DiaRVXSNbIOKb4qm406Cno/fNZQ=",
+    "headers": {
+      "Content-Type": "application/octet-stream",
+      "x-ms-blob-type": "BlockBlob"
+    },
+    "verb": "put"
+  },
+  "onProgress": {
+    "ondemand": true,
+    "url": "https://wlnr5sjl3a.execute-api.us-east-1.amazonaws.com/Masked:UK/Z3b5X3xUWxXiH6C9r9i9UlRU=",
+    "headers": {
+      "Content-Type": "application/json",
+      "x-das-authorize": "awssigv4(us-east-1)",
+      "x-ads-token-data": "{\"access_token\":{\"client_id\":\"oE7L8G4EZhckC5fITtI7z1pjWVP1bEww\"},\"scope\":\"code:all\",\"expires_in\":3594,\"client_id\":\"oE7L8G4EZhckC5fITtI7z1pjWVP1bEww\"}"
+    },
+    "verb": "put"
+  }
+}
+"Quotas":{
+  "limitProcessingTimeSec": 900,
+  "limitTotalUncompressedAppsSizeInMB": 500
+}
+[07/23/2020 11:50:55] Starting work item aaf241c5517b4b41b6640ba019993197
+[07/23/2020 11:50:55] Start download phase.
+[07/23/2020 11:50:55] Start downloading input: verb - 'GET', url - 'https://forge6668.blob.core.windows.net/das-637311216468627404/20200723052046_input_sample.ipt?sv=2019-02-02&sr=b&sig=m7929rNhBmqBX4lgGUqhCFjNE1qmq1%2FXzeg6ieJLgtk%3D&st=2020-07-23T11%3A45%3A49Z&se=2020-07-24T11%3A50%3A49Z&sp=r'
+[07/23/2020 11:50:55] Embedded resource [ {'Width':'40.0','Height':'80.0'}] is saved as file: T:\Aces\Jobs\aaf241c5517b4b41b6640ba019993197\params.json.
+[07/23/2020 11:50:55] '117760' bytes have been written to T:\Aces\Jobs\aaf241c5517b4b41b6640ba019993197\20200723052046_input_sample.ipt.
+[07/23/2020 11:50:55] End downloading file 'https://forge6668.blob.core.windows.net/das-637311216468627404/20200723052046_input_sample.ipt?sv=2019-02-02&sr=b&sig=m7929rNhBmqBX4lgGUqhCFjNE1qmq1%2FXzeg6ieJLgtk%3D&st=2020-07-23T11%3A45%3A49Z&se=2020-07-24T11%3A50%3A49Z&sp=r'.
+[07/23/2020 11:50:55] End download phase successfully.
+[07/23/2020 11:50:55] Start preparing script and command line parameters.
+[07/23/2020 11:50:55] Command line: [ /i T:\Aces\Jobs\aaf241c5517b4b41b6640ba019993197\20200723052046_input_sample.ipt /al T:\Aces\Applications\ad8d43af6c8f18027943431abf1f3a25.dasdev.UpdateIPTParams[1].package T:\Aces\Jobs\aaf241c5517b4b41b6640ba019993197\params.json]
+[07/23/2020 11:50:55] End preparing script and command line parameters.
+[07/23/2020 11:50:55] Start script phase.
+[07/23/2020 11:50:55] ### Command line arguments: /isolate HKEY_CURRENT_USER\SOFTWARE\AppDataLow\Software\Autodesk\CoreUser\WorkItem_aaf241c5517b4b41b6640ba019993197 "T:\Aces\Jobs\aaf241c5517b4b41b6640ba019993197\userdata" /exe "T:\Aces\AcesRoot\25.00\coreEngine\Exe\InventorCoreConsole.exe"  /i T:\Aces\Jobs\aaf241c5517b4b41b6640ba019993197\20200723052046_input_sample.ipt /al T:\Aces\Applications\ad8d43af6c8f18027943431abf1f3a25.dasdev.UpdateIPTParams[1].package T:\Aces\Jobs\aaf241c5517b4b41b6640ba019993197\params.json.
+[07/23/2020 11:50:55] Start Inventor Core Engine standard output dump.
+[07/23/2020 11:50:55] InventorCoreConsole.exe Information: 0 : InventorCoreConsole.exe: 25.0.18300.0
+[07/23/2020 11:50:56] InventorCoreConsole.exe Information: 0 : Starting Inventor Server.
+[07/23/2020 11:50:56] InventorCoreConsole.exe Information: 0 : Started Inventor Server 2021 (Build 250183000, 183)
+[07/23/2020 11:50:56] InventorCoreConsole.exe Information: 0 : Loading plug-in: iLogic Plugin
+[07/23/2020 11:50:56]     InventorCoreConsole.exe Information: 0 : Activating plug-in: iLogic Plugin
+[07/23/2020 11:50:56]     iLogic Plugin: initializing...
+[07/23/2020 11:50:56] InventorCoreConsole.exe Information: 0 : Opening document: T:\Aces\Jobs\aaf241c5517b4b41b6640ba019993197\20200723052046_input_sample.ipt
+[07/23/2020 11:50:56] InventorCoreConsole.exe Information: 0 : Opened
+[07/23/2020 11:50:56] InventorCoreConsole.exe Information: 0 : Getting Inventor plug-in.
+[07/23/2020 11:50:56] InventorCoreConsole.exe Information: 0 : Plug-in: UpdateIPTParam
+[07/23/2020 11:50:56]     InventorCoreConsole.exe Information: 0 : Activating plug-in: UpdateIPTParam
+[07/23/2020 11:50:56]     InventorCoreConsole.exe Information: 0 : Executing 'Run' method on Automation object.
+[07/23/2020 11:50:56]     InventorCoreConsole.exe Information: 0 : DLL UpdateIPTParam.dll compiled on 07/23/2020 05:40:48
+[07/23/2020 11:50:58]     InventorCoreConsole.exe Information: 0 : Performing iLogic diagnostics...
+[07/23/2020 11:50:58]     InventorCoreConsole.exe Information: 0 : End of iLogic diagnostics...
+[07/23/2020 11:50:58]     InventorCoreConsole.exe Information: 0 : Deactivating plug-in: UpdateIPTParam
+[07/23/2020 11:51:00] End Inventor Core Engine standard output dump.
+[07/23/2020 11:51:00] End script phase.
+[07/23/2020 11:51:00] Start upload phase.
+[07/23/2020 11:51:00] Uploading 'T:\Aces\Jobs\aaf241c5517b4b41b6640ba019993197\outputFile.ipt': verb - 'PUT', url - 'https://forge6668.blob.core.windows.net/das-637311216468627404/20200723052046_result.ipt?sv=2019-02-02&sr=b&sig=ByiRtiFE1C1loPGGIqJcMoMkq5027tG%2BQvq%2FS0Vly%2B4%3D&st=2020-07-23T11%3A45%3A49Z&se=2020-07-24T11%3A50%3A49Z&sp=cw'
+[07/23/2020 11:51:00] End upload phase successfully.
+[07/23/2020 11:51:00] Job finished with result Succeeded
+[07/23/2020 11:51:00] Job Status:
+{
+  "status": "success",
+  "reportUrl": "https://dasprod-store.s3.amazonaws.com/workItem/dasdev/aaf241c5517b4b41b6640ba019993197/report.txt?AWSAccessKeyId=ASIATGVJZKM3EH6ZWBZS&Expires=1595509555&x-amz-security-token=IQoJb3JpZ2luX2VjELr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQD5RE6rXf%2B7bzti5tQSZQsKdjRMCLaV2JkzFqzFYPEmWgIhANZsIG2a8WmWSC7vTAm51iJbWBgecEjgJD636Cd08XhBKtUBCHMQAhoMMjIwNDczMTUyMzEwIgziIuuhXjEDC4BgP%2FsqsgG6bkj3r7%2BT%2BSLfaR8RF3AN18pCJKDU5YlCRro3gy%2FxUYWQWSCWSdYTQ8NlBJUkhJ4L7Fz5FvjDA5058gZWeJvfYc8%2BU9vul0zz5NUvZ1f4mwEPvm1v2vx9UqpkDPHamHC2nIhHyWW%2FUA0CSiUIgXSeziyifV9tBjlsaiJ7HIu%2BzeYhfg748%2B2rCg%2BjlUHTK9StSXBcGh5Gj4jLw9JJJKfVg%2FyDsQnfGUwRyRaKb0mmGWuWMP6%2B5fgFOt8BxE68Tjn7q4SoYlnPYYGXvYWNikCjkBfEqWh%2BhpWEn31MZBeIFiLpcOjc1HaLWFuu1Wf3ZW1yY2705L4xZh7lcjoF42l35d5ht6jRWO7iYM2L5SDdir1W67IDsNQIGIeNNttWoczXFzGQlVusJCxmgPRYXJZ0Hgzse4RMQriScNGoMuAoe9nhj611xWYMjTWP3cJQJ%2FnNmbk0kfQN2fBr%2B3Q3simu%2BUxwyuiSbyq%2BmJBa9YKB7%2FaQNiBXZOeAJN0vhWENI8K5fHCjpSVAcCzsrEKkU%2F2pab72DgfZTSRg2w%3D%3D&Signature=bF4%2BfIhrr8oDO4MOacs6Ogn40x8%3D",
+  "stats": {
+    "timeQueued": "2020-07-23T11:50:54.7701613Z",
+    "timeDownloadStarted": "2020-07-23T11:50:55.1104052Z",
+    "timeInstructionsStarted": "2020-07-23T11:50:55.7294719Z",
+    "timeInstructionsEnded": "2020-07-23T11:51:00.1511124Z",
+    "timeUploadEnded": "2020-07-23T11:51:00.6730686Z",
+    "bytesDownloaded": 117793,
+    "bytesUploaded": 106496
+  },
+  "id": "aaf241c5517b4b41b6640ba019993197"
+}
